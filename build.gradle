@@ -3,6 +3,7 @@ buildscript {
 		maven {
 			name = 'Fabric'
 			url = 'https://maven.fabricmc.net/'
+			url 'https://jitpack.io'
 		}
 		mavenCentral()
 		maven { 
@@ -12,6 +13,7 @@ buildscript {
 	}
 	dependencies {
 		classpath 'com.github.Chocohead.Fabric-Loom:fabric-loom:0d0261a'
+		modImplementation 'com.github.Chocohead:OptiFabric:<1.12.7>
 	}
 }
 
